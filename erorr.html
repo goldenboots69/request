@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Error Page</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      margin: 0;
+      background-color: #f6f6f6;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Fixed Header Styles */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 70px; /* Updated height to 100 pixels */
+      background-color: #3b3f4c; /* Black background */
+      color: #ffffff; /* White text color */
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      max-width: 100px;
+      margin-right: 10px;
+    }
+
+    .company-name {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333333;
+    }
+
+    .container {
+      max-width: 400px;
+      padding: 20px;
+      margin-top: 60px; /* Add margin to push the container below the fixed header */
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .error-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333333;
+    }
+
+    .error-message {
+      margin-top: 20px;
+      color: #333333;
+    }
+
+    .chat-button {
+      background-color: #00bfff;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+
+    /* Footer Styles */
+    .footer {
+      background-color: #3b3f4c;
+      color: #ffffff;
+      padding: 10px 0;
+      text-align: center;
+      font-size: 14px;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+    }
+
+    .footer a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      color: #f2f2f2;
+    }
+  </style>
+</head>
+
+<body bgcolor="--color-beige">
+  <!-- Fixed Header -->
+  <header>
+    <img class="logo" width="130px" height="120px" src="logo.svg" alt="Your Logo">
+
+  </header>
+
+  <div class="container">
+    <div class="error-title">Your account has been disabled for security reasons.</div>
+    <div class="error-message">Due to a recent activity, your account has been blocked. Please contact our support team on chat to verify and unlock your account.</div>
+    <div class="chat-button">Chat with Us</div>
+  </div>
+
+  <!-- Page Footer -->
+  <footer class="footer">
+    <p>&copy; 2023 WhiteBit. All rights reserved.</p>
+    <div>
+      <a href="#">Terms of Service</a>
+      <span>|</span>
+      <a href="#">Privacy Policy</a>
+      <span>|</span>
+      <a href="#">Contact Us</a>
+    </div>
+
+  </footer>
+</body>
+
+</html>
